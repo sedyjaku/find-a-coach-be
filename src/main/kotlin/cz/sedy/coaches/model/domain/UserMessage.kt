@@ -5,7 +5,7 @@ import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
 @Document
-data class UserRequest(
+data class UserMessage(
 
         @Id
         override val id: String?,

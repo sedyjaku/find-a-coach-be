@@ -17,7 +17,7 @@ data class Coach(
 
         var email: String,
 
-        var Age: Integer,
+        var Age: Int,
 
         var sexTypeId: SexType,
 
