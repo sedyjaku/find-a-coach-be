@@ -1,4 +1,4 @@
-package cz.sedy.planner.model.controller.request
+package cz.sedy.coaches.model.controller.request
 
 import cz.sedy.coaches.model.Identified
 import org.springframework.data.annotation.Id

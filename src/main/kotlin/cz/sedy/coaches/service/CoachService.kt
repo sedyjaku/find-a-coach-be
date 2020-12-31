@@ -1,8 +1,8 @@
 package cz.sedy.coaches.service
 
 import cz.sedy.coaches.model.domain.Coach
-import cz.sedy.planner.model.command.CoachCreateCommand
-import cz.sedy.planner.model.command.CoachUpdateCommand
+import cz.sedy.coaches.model.command.CoachCreateCommand
+import cz.sedy.coaches.model.command.CoachUpdateCommand
 import kotlinx.coroutines.flow.Flow
 
 interface CoachService {

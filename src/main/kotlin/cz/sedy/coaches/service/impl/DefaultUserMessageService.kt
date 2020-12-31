@@ -3,10 +3,10 @@ package cz.sedy.coaches.service.impl
 import cz.sedy.coaches.exception.NotFoundException
 import cz.sedy.coaches.model.domain.UserMessage
 import cz.sedy.coaches.service.UserMessageService
-import cz.sedy.planner.mapper.domain.UserMessageMapper
-import cz.sedy.planner.model.command.UserMessageCreateCommand
-import cz.sedy.planner.model.command.UserMessageUpdateCommand
-import cz.sedy.planner.repository.UserMessageRepository
+import cz.sedy.coaches.mapper.domain.UserMessageMapper
+import cz.sedy.coaches.model.command.UserMessageCreateCommand
+import cz.sedy.coaches.model.command.UserMessageUpdateCommand
+import cz.sedy.coaches.repository.UserMessageRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.reactive.asFlow
 import kotlinx.coroutines.reactive.awaitFirstOrElse
@@ -15,8 +15,8 @@ import org.springframework.stereotype.Service
 
 @Service
 class DefaultUserMessageService (
-        private val userMessageRepository: UserMessageRepository,
-        private val userMessageMapper: UserMessageMapper
+    private val userMessageRepository: UserMessageRepository,
+    private val userMessageMapper: UserMessageMapper
 ) : UserMessageService {
 
 

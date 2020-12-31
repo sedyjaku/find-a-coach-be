@@ -2,10 +2,10 @@ package cz.sedy.coaches.handler
 
 import cz.sedy.coaches.constant.ID_PATH_VARIABLE
 import cz.sedy.coaches.service.UserMessageService
-import cz.sedy.planner.mapper.command.UserMessageCreateCommandMapper
-import cz.sedy.planner.mapper.command.UserMessageUpdateCommandMapper
-import cz.sedy.planner.mapper.controller.response.UserMessageResponseMapper
-import cz.sedy.planner.model.controller.request.UserMessageRequest
+import cz.sedy.coaches.mapper.command.UserMessageCreateCommandMapper
+import cz.sedy.coaches.mapper.command.UserMessageUpdateCommandMapper
+import cz.sedy.coaches.mapper.controller.response.UserMessageResponseMapper
+import cz.sedy.coaches.model.controller.request.UserMessageRequest
 import kotlinx.coroutines.flow.map
 import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.server.*

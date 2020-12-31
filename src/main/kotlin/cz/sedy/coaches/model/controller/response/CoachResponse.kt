@@ -1,4 +1,4 @@
-package cz.sedy.planner.model.controller.response
+package cz.sedy.coaches.model.controller.response
 
 import cz.sedy.coaches.model.ExpertiseType
 import cz.sedy.coaches.model.Identified

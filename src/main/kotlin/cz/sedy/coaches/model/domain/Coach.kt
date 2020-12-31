@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 
 @Document
 data class Coach(
+
         @Id
         override val id: String,
 

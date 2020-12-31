@@ -10,7 +10,7 @@ plugins {
 
 group = "cz.sedy"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_15
+java.sourceCompatibility = JavaVersion.VERSION_14
 
 configurations {
 	compileOnly {
@@ -20,6 +20,8 @@ configurations {
 
 repositories {
 	mavenCentral()
+	mavenLocal()
+	jcenter()
 	maven { url = uri("https://repo.spring.io/milestone") }
 	maven { url = uri("https://repo.spring.io/snapshot") }
 }
@@ -42,13 +44,15 @@ dependencies {
 	testImplementation("org.springframework.security:spring-security-test")
 }
 
-tasks.withType<KotlinCompile> {
-	kotlinOptions {
-		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "15"
+tasks{
+	withType<KotlinCompile> {
+		kotlinOptions {
+			freeCompilerArgs = listOf("-Xjsr305=strict")
+			jvmTarget = "14"
+		}
 	}
-}
 
-tasks.withType<Test> {
-	useJUnitPlatform()
+	withType<Test> {
+		useJUnitPlatform()
+	}
 }

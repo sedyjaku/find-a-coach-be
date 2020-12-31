@@ -1,9 +1,9 @@
-package cz.sedy.planner.mapper.domain
+package cz.sedy.coaches.mapper.domain
 
 import cz.sedy.coaches.config.MappingConfig
-import cz.sedy.planner.model.command.UserMessageCreateCommand
+import cz.sedy.coaches.model.command.UserMessageCreateCommand
 import cz.sedy.coaches.model.domain.UserMessage
-import cz.sedy.planner.model.command.UserMessageUpdateCommand
+import cz.sedy.coaches.model.command.UserMessageUpdateCommand
 import org.mapstruct.Mapper
 import org.mapstruct.MappingTarget
 
