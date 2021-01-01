@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 data class Coach(
 
         @Id
-        override val id: String,
+        override val id: String?,
 
         var firstName: String,
 
@@ -18,9 +18,9 @@ data class Coach(
 
         var email: String,
 
-        var Age: Int,
+        var age: Int,
 
-        var sexTypeId: SexType,
+        var sexType: SexType,
 
         val expertiseList: MutableList<ExpertiseType>
 

@@ -5,8 +5,9 @@ server:
     mime-types: application/json, text/html
 spring:
   application:
-    name: planner
+    name: coaches
   data:
     mongodb:
       host: localhost
       port: 27017
+      database: coaches

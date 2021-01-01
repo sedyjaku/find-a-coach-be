@@ -14,9 +14,9 @@ data class CoachRequest(
 
 	var email: String,
 
-	var Age: Int,
+	var age: Int,
 
-	var sexTypeId: SexType,
+	var sexType: SexType,
 
 	val expertiseList: MutableList<ExpertiseType>
 )

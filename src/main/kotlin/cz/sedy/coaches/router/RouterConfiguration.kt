@@ -1,5 +1,6 @@
 package cz.sedy.coaches.router
 
+import COACH_ENDPOINT
 import USER_MESSAGE_ENDPOINT
 import cz.sedy.coaches.handler.CoachHandler
 import cz.sedy.coaches.handler.UserMessageHandler
@@ -26,7 +27,7 @@ class RouterConfiguration {
     @FlowPreview
     @Bean
     fun coachRoutes(handler: CoachHandler) = coRouter {
-        USER_MESSAGE_ENDPOINT.nest {
+        COACH_ENDPOINT.nest {
             GET("", handler::getAll)
             GET("/{id}", handler::getById)
             POST("", handler::createCoach)
